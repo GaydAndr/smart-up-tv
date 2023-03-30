@@ -27,7 +27,6 @@ export default function App() {
 
   const getMovies = async () => {
     try {
-        
       // const response = await BACK.post('/api/auth/login', loginObj, {
         const response = await BACK.get('/', {
         headers:
@@ -54,7 +53,6 @@ export default function App() {
 
           onPress={() => {
             getMovies().then(console.log(data))
-            // console.log(999);
             // console.log(data);
           }}
       />
